@@ -3,7 +3,9 @@
 
 #include "sort.h"
 
-
+/**
+ * Compare vectors based on their abs 
+ **/
 int comp(const void* a, const void* b) {
     Vector* v1 = (Vector*)a;
     Vector* v2 = (Vector*)b;
@@ -13,7 +15,9 @@ int comp(const void* a, const void* b) {
     return abs1 - abs2;
 }
 
-
+/**
+ * Write vector array to file "output.txt" 
+ **/
 void out(Vector vecs[], int size) {
     FILE* fptr = fopen("output.txt","w");
 
@@ -24,8 +28,9 @@ void out(Vector vecs[], int size) {
     fclose(fptr);
 }
 
-int main() {
 
+int main() {
+    // Define 12 vectors
     Vector array[] = {
         {1,2,3},
         {2,3,4},
@@ -40,8 +45,9 @@ int main() {
         {5,7,1},
         {12,65,12},
     };
-
+    // Sort vectors
     qsort(&array, 12, sizeof(Vector), comp);
+    // Print vectors
     out(array, 12);
     return 0;
 }
