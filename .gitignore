@@ -2,3 +2,7 @@
 output.txt
 *.zip
 *.tar
+
+.vscode/
+
+bin/
