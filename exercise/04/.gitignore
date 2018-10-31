@@ -1,0 +1,7 @@
+*_sym
+*.apr
+*.asm_sym
+*.avd
+*.lst
+*.map
+*.obj
