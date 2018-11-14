@@ -8,12 +8,12 @@
 ldi r16, $8  ; Load imput value
  
 
-ldi r17, 0 ; Load value 0
-ldi r18, $0  ; initialize sum variable to 0
+ldi r17, 0 ; Load value 0 as counter value
+ldi r18, 0  ; initialize sum variable to 0
 
 loop:
 add r18, r16 ; Add input value to sum
-inc r17 ; decrement the counter value
+inc r17 ; inc the counter value
 
 cpi r17, 14   ; compare the counter value to 12 (end of loop)
 brne loop    ; if the counter value is not 12 continue with loop

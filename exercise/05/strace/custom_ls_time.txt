@@ -1,0 +1,27 @@
+     0.000000 execve("./bin/ls", ["./bin/ls", "."], 0x7fffc3d26870 /* 17 vars */) = 0
+     0.002592 brk(NULL)                 = 0xce8000
+     0.000226 brk(0xce91c0)             = 0xce91c0
+     0.000248 arch_prctl(ARCH_SET_FS, 0xce8880) = 0
+     0.000133 uname({sysname="Linux", nodename="Tim-PC", ...}) = 0
+     0.000144 readlink("/proc/self/exe", "/mnt/d/Dev/UNIBAS/CAOS/exercise/"..., 4096) = 41
+     0.000257 brk(0xd0a1c0)             = 0xd0a1c0
+     0.000332 brk(0xd0b000)             = 0xd0b000
+     0.000264 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+     0.000405 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+     0.000385 fstat(3, {st_mode=S_IFDIR|0777, st_size=512, ...}) = 0
+     0.000671 getdents(3, /* 9 entries */, 32768) = 248
+     0.000451 fstat(1, {st_mode=S_IFCHR|0660, st_rdev=makedev(4, 1), ...}) = 0
+     0.000649 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+     0.000416 write(1, "File:\t.\n", 8) = 8
+     0.000621 write(1, "File:\t..\n", 9) = 9
+     0.000660 write(1, "File:\tbin\n", 10) = 10
+     0.000302 write(1, "File:\tcp.c\n", 11) = 11
+     0.001384 write(1, "File:\tls.c\n", 11) = 11
+     0.000500 write(1, "File:\tMakefile\n", 15) = 15
+     0.000267 write(1, "File:\tread_args.c\n", 18) = 18
+     0.000407 write(1, "File:\tstatus.c\n", 15) = 15
+     0.000246 write(1, "File:\tstrace\n", 13) = 13
+     0.000226 getdents(3, /* 0 entries */, 32768) = 0
+     0.000372 close(3)                  = 0
+     0.000135 exit_group(0)             = ?
+     0.000088 +++ exited with 0 +++

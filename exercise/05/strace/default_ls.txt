@@ -1,0 +1,7 @@
+Makefile
+bin
+cp.c
+ls.c
+read_args.c
+status.c
+strace

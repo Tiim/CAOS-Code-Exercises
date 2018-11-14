@@ -1,0 +1,9 @@
+File:	.
+File:	..
+File:	bin
+File:	cp.c
+File:	ls.c
+File:	Makefile
+File:	read_args.c
+File:	status.c
+File:	strace
