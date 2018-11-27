@@ -1,5 +1,5 @@
 ; Registers
-; 	r16 - Input (char c)
+; 	r16 - Input (char c) / Output
 ;	r17 - Mask 0
 ;	r18 - Mask 1
 ;	r19 - Mask 2

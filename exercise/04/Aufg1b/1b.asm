@@ -15,13 +15,16 @@ loop:
 add r18, r16 ; Add input value to sum
 inc r17 ; inc the counter value
 
-cpi r17, 12   ; compare the counter value to 12 (end of loop)
+cpi r17, 14   ; compare the counter value to 12 (end of loop)
 brne loop    ; if the counter value is not 12 continue with loop
+
 
 ldi r19, 255
 eor r18, r19 ; vorzeichen wechseln wie in den slides
 
 end:
 jmp end
+
+
 
 
